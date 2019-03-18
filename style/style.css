@@ -38,8 +38,12 @@
 }
 .conteiner_fix {
    height: 80px;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: space-between;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
    background-color: rgba(233,233,233,0.5);
    width: 100%;
    min-width: 320px;
@@ -62,15 +66,24 @@ header {
     display: block;
     width: 30px;
     height: 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 25px;
     margin-left: 70px;
 }
 
 .nav_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     float: right;
     min-width: 616px;
     min-height: 24px;
@@ -93,6 +106,7 @@ header {
     font-weight: bold;
     line-height: 24px;
     text-transform: uppercase;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -104,9 +118,15 @@ header {
     height: 260px;
     width: 480px;
     margin: 150px 124px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     float: right;
     clear: both;
 }
